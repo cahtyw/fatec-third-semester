@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Factorial {
-  public static void main(String[] args){
+  public static void main(String[] args) {
     Scanner input = new Scanner(System.in);
     int product = 1;
 
@@ -9,10 +9,12 @@ public class Factorial {
 
     int factorial = input.nextInt();
 
-    for(int i=1; i <= factorial; i++){
+    for (int i = 1; i <= factorial; i++) {
       product *= i;
     }
 
     System.out.println("! = " + product);
+
+    input.close();
   }
 }
